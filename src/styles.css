@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.home span {
+  cursor: pointer;
+}
+.home span p {
+  color: black;
+}
+.icon-container {
+  margin-top: 1.5rem;
+  display: flex;
+  width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 85vh;
+}
+.icon-container span {
+  margin-left: 0.5rem;
+}
+.icon-container span img {
+  margin-top: 10px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.header {
+  background-color: skyblue;
+  padding: 0.75rem;
+  border-top: 1px solid grey;
+  width: 100vw;
+}
+.header span {
+  position: absolute;
+  left: 30rem;
+  top: 1rem;
+}
+.header span img {
+  /* margin-top: 10px; */
+  width: 25px;
+  /* margin-bottom: 10px; */
+}
+.header span p {
+  /* margin-top: 10px; */
+  font-size: 0.7rem;
+  /* margin-bottom: 10px; */
+}
+.addtodo {
+  background-color: whitesmoke;
+  padding-bottom: 0.75rem;
+  border-top: 2px solid grey;
+  border-bottom: 1px solid grey;
+  width: 100vw;
+}
+.input-title {
+  width: 15rem;
+  text-align: center;
+  height: 1.5rem;
+  margin-top: 1rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.input-description {
+  width: 15rem;
+  text-align: center;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.btn {
+  background-color: mediumspringgreen;
+  padding: 5px;
+  margin-top: 0.5rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todoitem {
+  background-color: whitesmoke;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  width: 80vw;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.title {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.description {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+.delete-btn {
+  background-color: red;
+  padding: 5px;
+  margin-top: 1rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ebook {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.ebook-header span {
+  position: absolute;
+  left: 30rem;
+}
+
+.ebook-header span img {
+  /* margin-top: 10px; */
+  width: 25px;
+  /* margin-bottom: 10px; */
+}
+.ebook-header span p {
+  /* margin-top: 10px; */
+  font-size: 0.7rem;
+  /* margin-bottom: 10px; */
+}
+.ebook-header {
+  background-color: skyblue;
+  padding: 0.75rem;
+  border-top: 1px solid grey;
+  width: 100vw;
+  /* height: 1rem; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.book-search-input {
+  width: 15rem;
+  text-align: center;
+  height: 1.7rem;
+  margin-top: 1rem;
+  border-left: 2px solid grey;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-radius: 5px;
+}
+.search-btn {
+  background-color: mediumspringgreen;
+  padding: 5px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: -0.2rem;
+}
+.ebookbodyf {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 0.5fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+.ebookbodyt {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.ebookbody1img {
+  width: 25px;
+  position: absolute;
+  left: 30rem;
+}
+.ebookbody1img:hover {
+  cursor: pointer;
+}
+.ebookbody1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.ebookitem {
+  display: flex;
+  flex-direction: column;
+  /* justify-content:left; */
+  align-items: center;
+  border: 1px solid lightgrey;
+  background-color: rgb(248, 248, 248);
+}
+.ebookitem:hover {
+  transition: 0.4s;
+  transform: scale(0.95);
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+.ebookitem img {
+  width: 150px;
+}
+.ebookiteminfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+.ebookiteminfoimg {
+  width: 180px;
+}
+
+.ebookiteminfodesc {
+  display: flex;
+  flex-direction: column;
+}
+.ebookiteminfodesctitle {
+  margin-top: 0.5rem;
+}
+.ebookiteminfodescsubtitle {
+  margin-top: 0.5rem;
+  color: grey;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ebookiteminfobtn {
+  padding: 0.2rem 0.5rem;
+  color: white;
+  background-color: rgb(48, 140, 216);
+  font-size: medium;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.ebookiteminfobtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+.eb-second-div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+/* .eb-title {
+  margin: 0.5rem 0rem;
+} */
+.eb-subtitle {
+  color: grey;
+  margin: 0.2rem 0rem;
+  font-size: small;
+}
